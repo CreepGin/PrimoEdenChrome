@@ -2,7 +2,7 @@ function submitToPE(obj){
   log("Submitting:");
   log(obj);
   var url = PRIMOEDEN_URL + "proxy/";
-  $.get(url, { type: "insert", key: "0724", data: obj }, function(res){
+  $.post(url, { type: "insert", key: "0724", data: obj }, function(res){
     log(res);
     log("--------------------------");
   });

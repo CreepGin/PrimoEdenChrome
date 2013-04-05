@@ -19,7 +19,7 @@ function extract(dom) {
     $this = $(this);
     var cardType = $this.attr("data-card-type");
     var tweet = { card: "", cardType: "" };
-    tweet.tweetId = parseInt($this.attr("data-tweet-id"));
+    tweet.tweetId = $this.attr("data-tweet-id");
     tweet.retweets = parseInt($this.find(".request-retweeted-popup > strong").text());
     tweet.favorites = parseInt($this.find(".request-favorited-popup > strong").text());
     tweet.text = $this.find(".js-tweet-text").html().trim();

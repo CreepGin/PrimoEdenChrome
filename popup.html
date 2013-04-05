@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <script src="jquery.js"></script>
+    <style>
+      body {
+        min-width: 200px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+      textarea {
+        width: 700px;
+        height: 400px;
+      }
+      #url {
+        width: 200px;
+        padding: 4px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    
+  </head>
+  <body>
+    <input type="text" id="url" value="http://primoden.com/" />
+    <button id="run">Run</button>
+    <button id="reset">Reset</button>
+    <input type="checkbox" id="debug" checked="checked"/> Debug
+    <script src="popup.js"></script>
+  </body>
+</html>
+
